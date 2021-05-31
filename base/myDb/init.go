@@ -1,5 +1,6 @@
 package mdb
 
-func Init() {
+func Init() error {
 
+	return nil
 }

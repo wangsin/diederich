@@ -8,7 +8,7 @@ func Init() error {
 	GlobalViper = viper.New()
 
 	GlobalViper.SetConfigName("dev")
-	GlobalViper.SetConfigFile("../../conf/dev.toml")
+	GlobalViper.SetConfigFile("conf/dev.toml")
 	err := GlobalViper.ReadInConfig()
 	if err != nil {
 		return err
