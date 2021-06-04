@@ -2,14 +2,14 @@ package mconf
 
 import "github.com/spf13/viper"
 
-var GlobalViper *viper.Viper
+var Viper *viper.Viper
 
 func Init() error {
-	GlobalViper = viper.New()
+	Viper = viper.New()
 
-	GlobalViper.SetConfigName("dev")
-	GlobalViper.SetConfigFile("conf/dev.toml")
-	err := GlobalViper.ReadInConfig()
+	Viper.SetConfigName("dev")
+	Viper.SetConfigFile("conf/dev.toml")
+	err := Viper.ReadInConfig()
 	if err != nil {
 		return err
 	}

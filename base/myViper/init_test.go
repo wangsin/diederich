@@ -11,5 +11,5 @@ func TestInit(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	fmt.Println(GlobalViper.GetString("main.port"))
+	fmt.Println(Viper.GetString("main.port"))
 }
