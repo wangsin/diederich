@@ -11,6 +11,8 @@ var GinEngine *gin.Engine
 func Init() error {
 	GinEngine = gin.Default()
 
+	// 这里需要接口统一中间层
+
 	regList := []baseinterface.Reg{
 		&apptool.ToolRouterGroup{
 			BasePath: "/diederich/tool/",

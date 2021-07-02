@@ -30,6 +30,12 @@ func initHandler() {
 	if err != nil {
 		panic(err)
 	}
+
+	//tracer, closer := base.InitJaeger()
+	//defer closer.Close()
+
+	//tracer.StartSpan()
+
 }
 
 func initSign() {

@@ -20,8 +20,8 @@ func (t *ToolRouterGroup) RegRouter(engine *gin.Engine) {
 
 func (t *ToolRouterGroup) GetHandlers() []gin.HandlerFunc {
 	return []gin.HandlerFunc{
-		func(context *gin.Context) {
-			return
-		},
+		//func(context *gin.Context) {
+		//	return
+		//},
 	}
 }
