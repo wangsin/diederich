@@ -2,24 +2,24 @@ package apptool
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/wangsin/diederich/app/tool/db"
 	dbreq "github.com/wangsin/diederich/app/tool/db/req"
+	"github.com/wangsin/diederich/base/consts"
 	baseinterface "github.com/wangsin/diederich/base/interface"
 )
 
 type ToolController struct {
-	baseinterface.BaseController
+	baseinterface.BaseControllerClass
 }
 
 func (c *ToolController) EchoDBConf(ctx *gin.Context) {
 	req := &dbreq.TestDBRequest{}
-	err := ctx.BindJSON(req)
+	err := ctx.Bind(req)
 	if err != nil {
-		c.EchoJson(ctx, map[string]string{
-			"code": "40000001",
-			"msg":  "参数错误",
-			"data": "",
-		})
+		c.EchoJsonWithFormatStruct(ctx, consts.ErrParams, err)
 		return
 	}
 
+	c.EchoJsonWithFormatStruct(ctx, consts.Success, db.TestDB(req))
+	return
 }

@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	mdb "github.com/wangsin/diederich/base/myDb"
-	mgin "github.com/wangsin/diederich/base/myGin"
-	mrds "github.com/wangsin/diederich/base/myRedis"
-	mconf "github.com/wangsin/diederich/base/myViper"
+	mdb "github.com/wangsin/diederich/base/my_db"
+	mgin "github.com/wangsin/diederich/base/my_gin"
+	mrds "github.com/wangsin/diederich/base/my_redis"
+	mconf "github.com/wangsin/diederich/base/my_viper"
 	"io"
 	"os"
 )

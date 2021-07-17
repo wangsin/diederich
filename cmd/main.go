@@ -1,8 +1,8 @@
 package main
 
 import (
-	mgin "github.com/wangsin/diederich/base/myGin"
-	mconf "github.com/wangsin/diederich/base/myViper"
+	mgin "github.com/wangsin/diederich/base/my_gin"
+	mconf "github.com/wangsin/diederich/base/my_viper"
 )
 
 func main() {

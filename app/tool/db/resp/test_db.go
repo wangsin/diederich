@@ -1,3 +1,6 @@
 package dbresp
 
-//type
+type EchoDBConf struct {
+	Echo interface{}            `json:"echo"`
+	Conf map[string]interface{} `json:"conf"`
+}

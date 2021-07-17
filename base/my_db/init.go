@@ -2,7 +2,7 @@ package mdb
 
 import (
 	"errors"
-	mconf "github.com/wangsin/diederich/base/myViper"
+	mconf "github.com/wangsin/diederich/base/my_viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"time"
