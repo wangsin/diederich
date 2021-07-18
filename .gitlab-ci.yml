@@ -4,4 +4,5 @@ stages:
 job 0:
   stage: build
   script:
-    - build.sh build
+    - pwd
+    - ./build.sh build
