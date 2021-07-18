@@ -5,4 +5,5 @@ job 0:
   stage: build
   script:
     - pwd
+    - chmod +x ./build.sh
     - ./build.sh build
