@@ -1,0 +1,7 @@
+stages:
+  - build
+
+job 0:
+  stage: build
+  script:
+    - build.sh build
