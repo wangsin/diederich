@@ -16,5 +16,4 @@
 .idea/
 output/
 
-go.sum
 conf/dev.toml
